@@ -1,8 +1,9 @@
 {
   "name": "vue3ts-audio-player",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "type": "module",
+  "repository": "https://github.com/ssyamv/vue3ts-audio-player.git",
   "files": [
     "dist"
   ],
