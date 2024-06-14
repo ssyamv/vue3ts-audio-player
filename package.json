@@ -1,0 +1,63 @@
+{
+  "name": "vue3ts-audio-player",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/vue3-audio-player.es.ts",
+  "main": "./dist/vue3-audio-player.umd.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-audio-player.es.ts",
+      "require": "./dist/vue3-audio-player.umd.ts"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "keywords": [
+    "audio",
+    "player",
+    "vue3"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force",
+    "lint": "eslint",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint__js": "^8.42.3",
+    "element-plus": "^2.7.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "sass": "^1.77.5",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.27.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.12.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "~9.4.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "globals": "^15.4.0",
+    "npm-run-all2": "^6.1.2",
+    "prettier": "^3.2.5",
+    "typescript": "~5.4.5",
+    "typescript-eslint": "^7.13.0",
+    "vite": "^5.2.8",
+    "vue-tsc": "^2.0.11"
+  }
+}
