@@ -37,3 +37,13 @@ pnpm build
 ```sh
 pnpm lint
 ```
+
+### 使用方法
+
+```js
+import 'vue3ts-audio-player/dist/style.css';
+import { Vue3AudioPlayer } from 'vue3ts-audio-player';
+<template>
+  <Vue3AudioPlayer />
+</template>;
+```
